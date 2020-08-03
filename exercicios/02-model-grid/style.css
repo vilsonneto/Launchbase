@@ -1,0 +1,298 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+
+:root {
+    --color-green: rgb(17, 230, 17);
+    --color-rocket: #7159c1;
+    --color-launchbase: #fd951f;
+    --color-goStack: #04d361;
+    --color-card: rgba(29, 28, 34, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+a {
+    text-decoration: initial;
+    color: white;
+}
+
+body {
+    background: black;
+    color: white;
+    
+}
+
+body header {
+    padding: 30px;
+    text-align: center;
+    height: 30px;
+    background: var(--color-card);
+}
+
+footer {
+    height: auto;
+    bottom: 20px;
+}
+
+footer .links {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .links a {
+    font-size: 10px;
+}
+
+.links a {
+    margin: 0 30px;
+    font-size: 25px;
+    max-width: px;
+    line-height: 35px;
+}
+
+.links a:hover {
+    color: var(--color-green);
+    transition: 300ms;
+}
+
+.card-instructor {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--color-green);
+    border-radius: 10px;
+}
+
+.card-instructor .header-card {
+    display: grid;
+    grid-template-columns: 120px 200px;
+    column-gap: 20px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.card-instructor .header-card img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.card-instructor .header-card div h2 {
+    align-items: center;
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+}
+
+.card-instructor .header-card div p {
+    color: var(--color-green);
+    font-size: 1.2rem;
+    
+}
+
+#index header div.cabecalho div.logo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#sobre .logo {
+    width: 450px;
+    margin: 25px auto;
+}
+#sobre .logo img {
+    width: 100%;
+    opacity: 0.8;
+} 
+
+#sobre main section {
+    width: 600px;
+    margin: 10px auto;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sobre main section.instructors {
+    text-align: justify;
+}
+
+#sobre main section.technologies {
+    text-align: left;
+}
+
+#sobre main section.technologies h2 {
+    margin-bottom: 15px;
+}
+
+#sobre .card-instructor .links {
+    margin: 8px auto;
+    width: 335px;
+}
+
+#sobre .card-instructor .links a {
+    font-size: 15px;
+    border-bottom: 1px solid var(--color-green);
+    text-align: center;
+}
+
+#conteudos {
+    background: rgb(0, 0, 0) url("https://app.rocketseat.com.br/static/media/MountainsOpacity.a4edba24.png");
+}
+
+#conteudos .cards {
+    max-width: 1100px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 40px auto 0;
+} 
+
+#conteudos .cards .card {
+    height: 500px;
+    text-align: center;
+    border: 1px solid var(--color-card);
+    border-radius: 10px;
+    margin-top: 15px;
+    background: var(--color-card) ;
+}
+
+#conteudos .card .number {
+    display: block;
+    border-radius: 50%;
+    width: 20px;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+#conteudos .card .subscribe {
+    display: flex;
+    font-size: 10px;
+    line-height: 20px;
+    width: 100%;
+    justify-content: center;   
+}
+
+#conteudos .card div.subscribe span {
+    border: none;
+}
+
+#conteudos .card div.subscribe span p {
+    display: inline;
+    margin-left: 5px;
+}
+
+#conteudos .card span i {
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+
+#conteudos .card p {
+    margin: 20px 38px 11px;
+}
+
+#conteudos .card svg {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#conteudos .card.starter svg .c {
+    fill: var(--color-rocket);
+}
+
+#conteudos .card svg .c,
+#conteudos .card svg .a {
+    opacity: 1;
+}
+
+#conteudos .card div.pay {
+    margin-top: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+#conteudos .card:hover {
+    transition: 500ms;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#conteudos .card.starter:hover,
+#conteudos .card.starter .number {
+    border:1px solid var(--color-rocket);
+}
+
+#conteudos .card.starter strong,
+#conteudos .card.starter span,
+#conteudos .card.starter i {
+    color: var(--color-rocket) ;
+}
+
+#conteudos .card.launchbase:hover,
+#conteudos .card.launchbase .number {
+    border:1px solid var(--color-launchbase);
+}
+
+#conteudos .card.launchbase strong,
+#conteudos .card.launchbase span,
+#conteudos .card.launchbase i {
+    color: var(--color-launchbase);
+}
+
+
+#conteudos .card.gostack:hover,
+#conteudos .card.gostack .number {
+    border:1px solid var(--color-goStack);    
+}
+
+#conteudos .card.gostack strong,
+#conteudos .card.gostack span,
+#conteudos .card.gostack i {
+    color: var(--color-goStack);
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.modal {
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    margin: 10vh auto;
+    position: relative;
+    border-radius: 20px 20px;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+} 
+
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 94%;
+    top: 6%;
+}
